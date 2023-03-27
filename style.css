@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import "templatecolours.css";
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  transition: all .2s linear;
+} */
+html{
+  font-size: 62.5%;
+  overflow: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth ;
+}
+body {
+  font-family: 'Roboto Slab', serif;
+  background-image: url(park-travel-blue-trees-winter-USA-687280-wallhere.com.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center; 
+  width: 70%;
+}
+li a button{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+img{
+  float: left;
+  display: block;
+  max-width: auto;
+  max-height: auto;
+}
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+  order: 5;
+}
+.nav_links {
+  list-style: none;
+}
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+  color: #0088e9;
+}
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.button:hover {
+  background-color: rgba(0,136,169,0.8)
+}
+header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  width: 80%;
+  display: flex;
+  justify-content: flex;
+  border: 1px solid #000;
+  margin: auto;
+  text-align: center;
+  color: #333;
+  z-index: 1000;
+  padding: 30px 10%;
+}
+.nav {
+  order: 1;
+  background-color: gray; 
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}      
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+header nav{
+  width: 95%;
+  height: 7%;
+  border: 1px solid #000;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header nav ul{
+ list-style: none;
+ display: flex;
+}
+header nav ul li{
+  padding: 3px 15px;
+  float: left;
+}
+.container {
+  display: grid;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+.container > * {
+  /* Position the first child element in the first column and first row */
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  /* Position the second child element in the second column and first row */
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+
+  /* Position the third child element in the first column and second row */
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+
+  /* Position the fourth child element in the second column and second row */
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  /* Position the fifth child element in the first column and third row */
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+
+  /* Position the sixth child element in the second column and third row */
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
